@@ -79,7 +79,7 @@ public class manivelle : MonoBehaviour
 
             float DeltaAngle = (FirstAngle-SecondAngle);
 
-            Debug.Log(Time.frameCount);
+            //Debug.Log(Time.frameCount);
 
             transform.Rotate(new Vector3(
                                         0,

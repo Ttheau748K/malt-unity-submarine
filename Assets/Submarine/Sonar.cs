@@ -25,13 +25,14 @@ public sealed class Sonar : MonoBehaviour
     void Update()
     {
         
-        transform.rotation = Quaternion.Euler(0 ,crank.tourGlobal*360 ,0);
+        //transform.rotation = Quaternion.Euler(0 ,crank.tourGlobal*360 ,0);
 
 
         threshold = sonarMat.GetFloat("_ScanFreq");
         speed = sonarMat.GetFloat("_ScanSpeed");
         time += Time.deltaTime*speed;
-        if (time >= threshold) { 
+        //if (time >= threshold) { 
+        if (true) {
             time = 0;
             previousPosition = newPosition;
             newPosition = navigator.radarPosition;
