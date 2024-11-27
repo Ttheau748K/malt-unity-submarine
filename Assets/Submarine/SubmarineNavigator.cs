@@ -41,7 +41,7 @@ public class SubmarineNavigator : MonoBehaviour
 
         float w=map.width;
         float h=map.height;
-/*COLLISON TO UNCOMMENT
+
         if(map.GetPixel((int)((x*w)%w),(int)((y*h)%h)).r==1){
             transform.position+=new Vector3(
                 Random.Range(-colisionForce,colisionForce),
@@ -53,8 +53,7 @@ public class SubmarineNavigator : MonoBehaviour
                 Bar.GetComponents<Transform>()[0].localScale = new Vector3(baseH.x-dmg,baseH.y,baseH.z);
             }
             Debug.Log("hit!");
-        }
-*/      
+        }    
 
 
         forwardCommand = lever.forwardValue/100.0f;
